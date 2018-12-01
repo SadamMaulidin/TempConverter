@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tapperware.tempconverter">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tmpicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tmpicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".Celcius" />
+        <activity android:name=".Reamur" />
+        <activity android:name=".Kelvin" />
+        <activity android:name=".Fahrenheit"/>
+
+        <activity android:name=".SplashScreen" >
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

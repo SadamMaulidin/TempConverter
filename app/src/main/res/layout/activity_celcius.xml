@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Celcius"
+    android:background="@drawable/celsius"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/from_reamur"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="249dp"
+        android:backgroundTint="#000"
+        android:gravity="center"
+        android:hint="From Reamur"
+        android:inputType="number"
+        android:textColorHint="#000"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/from_fahrenheit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="177dp"
+        android:backgroundTint="#000"
+        android:gravity="center"
+        android:hint="From Fahrenheit"
+        android:inputType="number"
+        android:textColorHint="#000"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/from_kelvin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/from_reamur"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-196dp"
+        android:backgroundTint="#000"
+        android:gravity="center"
+        android:hint="From Kelvin"
+        android:inputType="number"
+        android:textColorHint="#000"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/txtHasilKelvin"
+        android:layout_width="105dp"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="Hasil Kelvin"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/txtHasilReamur"
+        android:layout_width="105dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtHasilKelvin"
+        android:layout_gravity="center"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="Hasil Reamur"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp" />
+
+    <TextView
+        android:id="@+id/txtHasilFahrenheit"
+        android:layout_width="105dp"
+        android:layout_height="51dp"
+        android:layout_alignTop="@+id/txtHasilKelvin"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Hasil Fahrenheit"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnConvertkelvin"
+        android:layout_width="119dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/from_kelvin"
+        android:layout_gravity="center"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/kelbutt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="28dp" />
+
+    <Button
+        android:id="@+id/btnConvertReamur"
+        android:layout_width="119dp"
+        android:layout_height="42dp"
+        android:layout_alignStart="@+id/btnConvertkelvin"
+        android:layout_alignTop="@+id/from_reamur"
+        android:background="@drawable/reabutt"
+        android:layout_alignLeft="@+id/btnConvertkelvin" />
+
+    <Button
+        android:id="@+id/btnConvertFahrenheit"
+        android:layout_width="119dp"
+        android:layout_height="42dp"
+        android:layout_alignStart="@+id/btnConvertkelvin"
+        android:layout_alignTop="@+id/from_fahrenheit"
+        android:background="@drawable/fahrenbutt"
+        android:layout_alignLeft="@+id/btnConvertkelvin" />
+
+
+
+</RelativeLayout>
